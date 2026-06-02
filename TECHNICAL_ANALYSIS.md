@@ -115,30 +115,6 @@ combined_signal = SignalGenerator.combined_signal(df)
 stop_loss, take_profit = SignalGenerator.atr_based_stops(df, entry_price=2000)
 ```
 
-## Indicator Optimization
-
-### Bollinger Bands
-- **Default**: 20-period, 2 std dev
-- **Aggressive**: 10-period, 1.5 std dev
-- **Conservative**: 30-period, 2.5 std dev
-
-### RSI
-- **Default**: 14-period
-- **Fast**: 7-period
-- **Slow**: 21-period
-- **Oversold**: 30 (customizable)
-- **Overbought**: 70 (customizable)
-
-### Stochastic
-- **Default**: 14-period
-- **Oversold**: 20
-- **Overbought**: 80
-
-### ATR
-- **Default**: 14-period
-- **Stop Multiplier**: 2.0 (adjustable)
-- Higher multiplier = wider stops
-
 ## Best Practices
 
 1. **Use Multiple Timeframes**: Confirm signals on higher timeframes
